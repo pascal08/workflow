@@ -19,6 +19,7 @@ before_script:
   - cp phpunit.dist.xml phpunit.xml
 
 script:
+  - ./vendor/bin/phpcs
   - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
 after_success:
