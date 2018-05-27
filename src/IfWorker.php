@@ -17,8 +17,8 @@ abstract class IfWorker implements WorkerInterface
     /**
      * IfWorker constructor.
      *
-     * @param $value1
-     * @param $value2
+     * @param mixed $value1
+     * @param mixed $value2
      */
     public function __construct($value1, $value2)
     {
@@ -27,7 +27,7 @@ abstract class IfWorker implements WorkerInterface
     }
 
     /**
-     * @param $value
+     * @param mixed $value
      * @return mixed
      */
     protected function evaluate($value)
